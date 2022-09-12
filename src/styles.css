@@ -1,0 +1,53 @@
+
+
+:root {
+    --main-bg-color:rgb(27,38,44);
+    --main-color2:rgb(15,76,117);
+    --second-color:rgb(50,130,184);
+    --second-color2:rgb(187,225,250);
+  }
+
+  body
+  {
+      background-color: var(--main-bg-color);
+      color:#FFF;
+  }
+
+  button
+    {
+        color: #FFF !important;
+        background-color:var(--second-color) !important;
+    }
+
+    .log
+    {
+        position: absolute;
+        top:0;
+        right: 20px;
+        padding:7px 4px;
+        background-color: var(--second-color);
+        border: 1px solid var(--second-color);
+        border-top: 0px;
+    }
+
+    form
+    {
+        position: relative;
+        overflow: auto;
+    }
+
+    .pointer:hover
+    {
+        cursor: pointer;
+    }
+
+
+
+    @media screen and (min-width:200px) and (max-width:767px)
+    {
+        .w-50
+        {
+            width: 95% !important;
+        }
+        
+    }

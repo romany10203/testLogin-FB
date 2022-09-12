@@ -1,0 +1,33 @@
+
+<!-- About Team -->
+
+<div class="container my-5">
+    <div class="row">
+        <div *ngFor="let d of devs" class="col-md-6">
+            <div class="dev py-3 my-3">
+                <img class="text-center img-fluid text-center" [src]="d.img" [alt]="d.name">
+                <h3 class=" my-4">{{d.name}}, {{d.age}}</h3>
+                <p class="my-3 desc">{{d.about}}</p>
+                <a class="p-2 text-light " [href]="d.gitAcc" target="_blanc">GitHub Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contacnt Team dev -->
+
+<div class=" text-center container my-5">
+    <div class="row">
+        <div class="col-12">
+
+            <h2 >Message Us</h2>
+            <form [formGroup]="cont" (click)="getMessg();" class="form-group p-5">
+                <input required  formControlName="name" class="mb-4 py-4 form-control" placeholder="Name" type="text">
+                <div *ngIf="cont.controls.name.touched == true && cont.controls.name.errors != null" class="alert alert-danger">Name is required</div>
+                <textarea required  formControlName="messg" class="form-control" placeholder="Your Message" rows="5"></textarea>
+                <button [disabled]="cont.invalid" type="submit" class="btn px-5 my-3 float-right">Send</button>
+            </form>
+        </div>
+
+    </div>
+</div>

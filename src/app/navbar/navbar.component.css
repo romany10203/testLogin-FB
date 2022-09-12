@@ -1,0 +1,45 @@
+
+
+.forAct
+{
+    position: relative;
+
+}
+
+.forAct::before
+{
+    cursor: auto;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top:121%;
+    left:35%;
+    border-top:8px solid var(--second-color);
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+}
+
+nav
+{
+    background-color: var(--second-color) !important;
+}
+
+@media screen and (max-width:575px)
+{
+    .forAct::before
+    {
+        content: none;
+    }
+
+}
+
+
+#userSlide
+{
+    background-color: var(--second-color);
+    border:1px solid var(--main-color2);
+    /* position: absolute; */
+    top:56px;
+    right:20px;
+}

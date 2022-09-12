@@ -1,0 +1,17 @@
+
+.bg
+{
+    color:#000;
+}
+
+.bg i
+{
+    color: var(--second-color);
+}
+
+.homeLink
+{
+
+    text-decoration: none;
+
+}
